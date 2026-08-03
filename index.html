@@ -114,6 +114,26 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
 .fbtn{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;padding:14px 24px;border-radius:12px;white-space:nowrap;text-decoration:none}
 .fbtn.solid{background:#fff;color:var(--beam)}
 .fbtn.light{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.32)}
+.startcta{text-align:center;margin-top:22px}
+.startbtn{display:inline-block;font-family:'Poppins',sans-serif;font-weight:800;font-size:16px;color:#fff;background:var(--beam);padding:15px 30px;border-radius:13px;box-shadow:0 14px 30px -12px var(--beam);text-decoration:none}
+.startnote{font-size:12.5px;color:var(--faint);margin-top:9px}
+.ag-ic{width:34px;height:34px;border-radius:10px;background:var(--beam-tint);color:var(--beam-ink);display:grid;place-items:center;margin-bottom:11px}
+.ag-ic svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cbars{display:flex;flex-direction:column;gap:11px}
+.cbrow{display:grid;grid-template-columns:158px 1fr;gap:20px;align-items:center;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:15px 18px;box-shadow:0 1px 0 rgba(15,23,42,.02)}
+.cbrow.win{border-color:var(--beam);box-shadow:0 0 0 1px var(--beam) inset,var(--shadow)}
+.clab{font-family:'Poppins',sans-serif;font-weight:700;font-size:14.5px;color:var(--ink)}
+.clab span{display:block;font-family:'Nunito',sans-serif;font-weight:400;font-size:11px;color:var(--faint);margin-top:2px}
+.cbrow.win .clab{color:var(--beam-ink)}
+.cbmetrics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cbm-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px;gap:8px}
+.cbm-l{font-family:ui-monospace,Menlo,monospace;font-size:9px;letter-spacing:.03em;text-transform:uppercase;color:var(--faint);font-weight:700}
+.cbm-v{font-size:11px;color:var(--slate);font-weight:600;white-space:nowrap}
+.cbrow.win .cbm-v{color:var(--ink)}
+.track{height:7px;border-radius:99px;background:var(--line2)}
+.fill{height:100%;border-radius:99px;background:var(--faint)}
+.cbrow.win .fill{background:var(--beam)}
+@media(max-width:780px){.cbrow{grid-template-columns:1fr;gap:13px}.cbmetrics{grid-template-columns:1fr;gap:11px}}
 </style>
 </head>
 <body>
@@ -132,29 +152,31 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
   <div class="sec">
     <div class="kick">How it works</div>
     <div class="flow">
-      <div class="step"><div class="n">1</div><h3>I build your brain</h3><p>From your website and public footprint — a first version in minutes.</p><a class="steplink" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">See the one I built you &rarr;</a></div>
+      <div class="step"><div class="n">1</div><h3>I scan everything about you</h3><p>Your website first, then everything else I can learn about you — publicly, in minutes.</p></div>
       <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
-      <div class="step"><div class="n">2</div><h3>It maps your company</h3><p>Your offer, clients and gaps — one explorable map you own and can trust.</p></div>
+      <div class="step"><div class="n">2</div><h3>I compile your second brain</h3><p>One brain from all of it — spotting your gaps and opportunities. Watch it build, live.</p></div>
       <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
-      <div class="step"><div class="n">3</div><h3>Then it runs your growth</h3><p>It flags what to fix, then does it — a team of agents you switch on one at a time.</p></div>
+      <div class="step"><div class="n">3</div><h3>I show you your next best actions</h3><p>The highest-leverage things to do next, ranked and ready to go.</p></div>
     </div>
+    <div class="startcta"><a class="startbtn" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">Start now &mdash; it&rsquo;s free &rarr;</a><div class="startnote">A first version of your brain in minutes. No commitment.</div></div>
   </div>
 
   <div class="sec">
-    <div class="kick">Your growth team</div>
+    <div class="kick">Sometimes you&rsquo;ll want paid hands</div>
+    <p class="prooflead" style="margin-bottom:16px">When your brain flags something big &mdash; rebuild the site, switch on outreach &mdash; you can hire an agent to just do it. Your on-call exec team:</p>
     <div class="team">
-      <div class="ag on"><span class="tag">Start here</span><div class="num">01</div><h4>Website</h4><p>We build and run your site.</p></div>
-      <div class="ag on"><span class="tag">Start here</span><div class="num">02</div><h4>Cold outreach · BDR</h4><p>We run outbound and book meetings.</p></div>
-      <div class="ag"><div class="num">03</div><h4>Brand &amp; identity</h4><p>Your brand, done properly.</p></div>
-      <div class="ag"><div class="num">04</div><h4>Product marketing</h4><p>Landing pages, launch &amp; content.</p></div>
-      <div class="ag"><div class="num">05</div><h4>Sales tools &amp; assets</h4><p>Tools and collateral that close.</p></div>
-      <div class="ag"><div class="num">06</div><h4>Advisory — me in the room</h4><p>Strategy, and I show up personally.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h4>Website</h4><p>We build and run your site.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div><h4>Cold outreach &middot; BDR</h4><p>We run outbound and book meetings.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M4 7l2 1M18 16l2 1M4 17l2-1M18 8l2-1"/><circle cx="12" cy="12" r="3.5"/></svg></div><h4>Brand &amp; identity</h4><p>Your brand, done properly.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><path d="m3 11 15-4v11L3 15v-4z"/><path d="M11 15.5a2.6 2.6 0 0 1-5 .7"/><path d="M18 8a3 3 0 0 1 0 6"/></svg></div><h4>Product marketing</h4><p>Landing pages, launch &amp; content.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5"/><line x1="12" y1="12" x2="12" y2="22"/></svg></div><h4>Sales tools &amp; assets</h4><p>Tools and collateral that close.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polygon points="16 8 14 14 8 16 10 10 16 8"/></svg></div><h4>Advisory</h4><p>Strategy, and I show up personally.</p></div>
     </div>
   </div>
 
   <div class="sec">
     <div class="kick">Proof — this is live, not a deck</div>
-    <p class="prooflead">Every one of these is a <b>real site, tool or engine we built and run</b> — most are one click away. This is the team working.</p>
+    <p class="prooflead"><b>Real work, already shipped</b> — every one built and run by this team. Click any of them.</p>
     <div class="proof">
       <div class="pc"><div class="shot"><img src="img/datalynx.png" alt="Datalynx website"></div><div class="body"><span class="cap">Website</span><h4>Datalynx</h4><p>An enterprise migration site with a live ROI calculator, built end-to-end.</p><a class="link" href="https://datalynx.com.au" target="_blank" rel="noopener">datalynx.com.au →</a></div></div>
       <div class="pc"><div class="shot"><img src="img/tranche2.png" alt="StackGo Tranche 2 landing page"></div><div class="body"><span class="cap">Product marketing</span><h4>StackGo — Tranche 2 launch</h4><p>A product-launch landing page built around a hard compliance deadline.</p><a class="link" href="https://stackgo.io/identitycheck/tranche-2/" target="_blank" rel="noopener">stackgo.io →</a></div></div>
@@ -172,33 +194,25 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
       <div class="tier hl"><div class="nm">Grow</div><div class="amt pop">$6k<span>/mo</span></div><div class="inc">Brain + 3 agents</div><div class="note">A working growth team.</div></div>
       <div class="tier"><div class="nm">Accelerate</div><div class="amt pop">$12k<span>/mo</span></div><div class="inc">Full team + owned products</div><div class="note">The whole growth function, then products that compound.</div></div>
     </div>
-    <div class="ctbl-wrap" style="margin-top:16px"><table class="ctbl">
-      <thead><tr><th>Your real options</th><th>Price</th><th>What it covers</th><th>Your effort</th></tr></thead>
-      <tbody>
-        <tr><td class="opt">DIY AI tools<span>Claude, Delphi, Spine</span></td><td>$20–300/mo</td><td>one task, if you drive it</td><td>you do all of it</td></tr>
-        <tr><td class="opt">A hire<span>coordinator &rarr; fractional CMO</span></td><td>$6–25k/mo</td><td>one function</td><td>you manage them</td></tr>
-        <tr><td class="opt">A marketing agency<span>the usual suspects</span></td><td>$2–8k/mo</td><td>marketing only</td><td>you brief &amp; chase</td></tr>
-        <tr class="win"><td class="opt">NewCo<span>brain + agents + me</span></td><td>$3–12k/mo</td><td>your whole growth function</td><td>you approve &mdash; that&rsquo;s it</td></tr>
-      </tbody>
-    </table></div>
+    <div class="cbars" style="margin-top:14px"><div class="cbrow "><div class="clab">DIY AI tools<span>Claude, Delphi, Spine</span></div><div class="cbmetrics"><div class="cbm"><div class="cbm-top"><span class="cbm-l">Price</span><span class="cbm-v">$20–300/mo</span></div><div class="track"><div class="fill" style="width:8%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Done for you</span><span class="cbm-v">you do it all</span></div><div class="track"><div class="fill" style="width:12%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Covers</span><span class="cbm-v">one task</span></div><div class="track"><div class="fill" style="width:15%"></div></div></div></div></div><div class="cbrow "><div class="clab">A hire<span>coordinator &rarr; fractional CMO</span></div><div class="cbmetrics"><div class="cbm"><div class="cbm-top"><span class="cbm-l">Price</span><span class="cbm-v">$6–25k/mo</span></div><div class="track"><div class="fill" style="width:82%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Done for you</span><span class="cbm-v">you manage them</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Covers</span><span class="cbm-v">one function</span></div><div class="track"><div class="fill" style="width:45%"></div></div></div></div></div><div class="cbrow "><div class="clab">A marketing agency<span>the usual suspects</span></div><div class="cbmetrics"><div class="cbm"><div class="cbm-top"><span class="cbm-l">Price</span><span class="cbm-v">$2–8k/mo</span></div><div class="track"><div class="fill" style="width:32%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Done for you</span><span class="cbm-v">you brief &amp; chase</span></div><div class="track"><div class="fill" style="width:35%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Covers</span><span class="cbm-v">marketing only</span></div><div class="track"><div class="fill" style="width:30%"></div></div></div></div></div><div class="cbrow win"><div class="clab">NewCo<span>brain + agents + me</span></div><div class="cbmetrics"><div class="cbm"><div class="cbm-top"><span class="cbm-l">Price</span><span class="cbm-v">$3–12k/mo</span></div><div class="track"><div class="fill" style="width:48%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Done for you</span><span class="cbm-v">you just approve</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Covers</span><span class="cbm-v">whole function</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div></div></div></div>
   </div>
 
   <div class="sec">
     <div class="kick">About me</div>
     <div class="about">
       <div class="me">MC</div>
-      <div><h4>Matt Collis</h4><p>I've built and sold two companies, and I run StackGo today. But the thing I'm actually chasing is this: <b>one person, backed by a team of agents, doing what used to take a whole firm.</b> NewCo is me proving it &mdash; on real businesses, with my name on every account. I'd rather build that with a handful of people I trust than a big team I don't.</p></div>
+      <div><h4>Matt Collis</h4><p>I'm building inspiring projects &mdash; with smart people and the best technology I can get my hands on. Two companies built and sold, StackGo today. The thing I'm chasing now: <b>one person, backed by a team of agents, doing what used to take a whole firm.</b> NewCo is me proving it, on real businesses, with my name on every account. I'd rather build it with a handful of people I trust than a big team I don't.</p></div>
     </div>
   </div>
 
   <div class="close">
-    <div class="eyebrow">Your move, Paul</div>
     <h2 class="pop">Have a look, then tell me what you think.</h2>
-    <p>I built your brain earlier — open it and have a play. Then hit reply and send me your honest take. No deck, no meeting needed unless you want one.</p>
+    <p>The first version of your brain is free and takes minutes. Want me to build yours? Start it now &mdash; or just email me what you make of all this. No meeting needed unless you want one.</p>
     <div class="finalcta">
-      <a class="fbtn light" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">See the brain I built you &rarr;</a>
-      <a class="fbtn solid" href="mailto:matt@stackgo.io?subject=NewCo%20%E2%80%94%20my%20thoughts&body=Hey%20Matt%2C%20here%27s%20my%20honest%20take%3A%0A%0A1.%20Does%20the%20pain%20ring%20true%20for%20me%20and%20the%20advisors%20I%20know%3F%0A%0A2.%20Would%20I%20pay%20for%20this%2C%20and%20what%20feels%20fair%3F%0A%0A3.%20Would%20I%20send%20a%20few%20people%20your%20way%3F%0A%0A4.%20Beyond%20being%20a%20customer%20%E2%80%94%20advising%2C%20equity%2C%20something%20else%20%E2%80%94%20anything%20there%20for%20me%3F%0A%0A">Email me your thoughts &rarr;</a>
+      <a class="fbtn light" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">Build my brain &mdash; free &rarr;</a>
+      <a class="fbtn solid" href="mailto:matt@stackgo.io?subject=NewCo%20thoughts">Email me your thoughts &rarr;</a>
     </div>
+    <div style="margin-top:13px;font-size:12.5px;color:rgba(255,255,255,.82)">or just email <b style="color:#fff">matt@stackgo.io</b></div>
   </div>
 
   <div class="foot">Working draft for Paul · Aug 2026 · figures proposed &amp; to validate</div>
