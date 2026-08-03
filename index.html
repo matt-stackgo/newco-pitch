@@ -98,6 +98,22 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
 .email-btn{background:var(--beam);color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;padding:14px 24px;border-radius:12px;white-space:nowrap;box-shadow:0 12px 26px -12px var(--beam);text-decoration:none}
 .pc .shot.dual{display:flex;gap:0}
 .pc .shot.dual img{width:50%;height:100%;border-right:1px solid var(--line)}
+.steplink{display:inline-block;margin-top:11px;font-family:'Poppins',sans-serif;font-weight:700;font-size:12.5px;color:#fff;background:var(--beam);padding:8px 14px;border-radius:9px;text-decoration:none}
+.dual-cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:2px}
+.dual-cta a{font-weight:700;font-size:12px;color:var(--beam-ink)}
+.ctbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow)}
+.ctbl{width:100%;border-collapse:collapse;font-size:13px;min-width:580px}
+.ctbl th{text-align:left;font-family:ui-monospace,Menlo,monospace;font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);font-weight:700;padding:13px 15px;border-bottom:1px solid var(--line)}
+.ctbl td{padding:13px 15px;border-bottom:1px solid var(--line2);color:var(--slate);vertical-align:top}
+.ctbl tr:last-child td{border-bottom:0}
+.ctbl td.opt{font-weight:700;color:var(--ink);font-family:'Poppins',sans-serif}
+.ctbl td.opt span{display:block;font-family:'Nunito',sans-serif;font-weight:400;font-size:11px;color:var(--faint);margin-top:2px}
+.ctbl tr.win td{background:var(--beam-tint);color:var(--ink);font-weight:600}
+.ctbl tr.win td.opt{color:var(--beam-ink)}
+.finalcta{display:flex;gap:12px;flex-wrap:wrap}
+.fbtn{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;padding:14px 24px;border-radius:12px;white-space:nowrap;text-decoration:none}
+.fbtn.solid{background:#fff;color:var(--beam)}
+.fbtn.light{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.32)}
 </style>
 </head>
 <body>
@@ -116,7 +132,7 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
   <div class="sec">
     <div class="kick">How it works</div>
     <div class="flow">
-      <div class="step"><div class="n">1</div><h3>I build your brain</h3><p>From your website and public footprint — a first version in minutes, like the one you've already seen.</p></div>
+      <div class="step"><div class="n">1</div><h3>I build your brain</h3><p>From your website and public footprint — a first version in minutes.</p><a class="steplink" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">See the one I built you &rarr;</a></div>
       <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
       <div class="step"><div class="n">2</div><h3>It maps your company</h3><p>Your offer, clients and gaps — one explorable map you own and can trust.</p></div>
       <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
@@ -134,7 +150,6 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
       <div class="ag"><div class="num">05</div><h4>Sales tools &amp; assets</h4><p>Tools and collateral that close.</p></div>
       <div class="ag"><div class="num">06</div><h4>Advisory — me in the room</h4><p>Strategy, and I show up personally.</p></div>
     </div>
-    <div class="teamnote"><b>Your brain flags the first hires</b> — for you and Anthony, the website and lead-gen. Start with one from <b>$3k/mo</b>; the full team with me in the room is <b>$12k</b> — what Elia gets.</div>
   </div>
 
   <div class="sec">
@@ -145,49 +160,44 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
       <div class="pc"><div class="shot"><img src="img/tranche2.png" alt="StackGo Tranche 2 landing page"></div><div class="body"><span class="cap">Product marketing</span><h4>StackGo — Tranche 2 launch</h4><p>A product-launch landing page built around a hard compliance deadline.</p><a class="link" href="https://stackgo.io/identitycheck/tranche-2/" target="_blank" rel="noopener">stackgo.io →</a></div></div>
       <div class="pc"><div class="shot"><img src="img/actiondemo.png" alt="Action Demolition website"></div><div class="body"><span class="cap">Brand + website</span><h4>Action Demolition</h4><p>A full brand and website for a Sydney trades business, top to bottom.</p><a class="link" href="https://action-build-clear.lovable.app/" target="_blank" rel="noopener">see the site →</a></div></div>
       <div class="pc"><div class="shot"><img src="img/help.png" alt="StackGo help centre"></div><div class="body"><span class="cap">Content · self-serve</span><h4>StackGo help centre</h4><p>An AI-grounded help centre that answers customers so the team doesn't have to.</p><a class="link" href="https://help.stackgo.io" target="_blank" rel="noopener">help.stackgo.io →</a></div></div>
-      <div class="pc"><div class="shot"><img src="img/markrobb.png" alt="Mark Robb ASX300 dashboard"></div><div class="body"><span class="cap">Sales tool</span><h4>Mark Robb — ASX300 agent</h4><p>A live decision-support dashboard built for a trader, from spec to shipped.</p><span class="priv">Private client tool</span></div></div>
-      <div class="pc"><div class="shot dual"><img src="img/casestudy.png" alt="Datalynx case study cover"><img src="img/whitepaper.png" alt="Datalynx white paper cover"></div><div class="body"><span class="cap">Sales &amp; marketing collateral</span><h4>Datalynx — case studies &amp; white papers</h4><p>Client-ready case studies, white papers and decks. <span style="color:var(--faint)">+ LinkedIn posts, banners, partner decks.</span></p><span class="priv">Sales collateral</span></div></div>
+      <div class="pc"><div class="shot"><img src="img/customerx.png" alt="Anonymised decision-support dashboard"></div><div class="body"><span class="cap">Sales tool</span><h4>Customer X — decision agent</h4><p>A live decision-support dashboard we built for a client, spec to shipped.</p><span class="priv">Private client tool</span></div></div>
+      <div class="pc"><div class="shot dual"><img src="img/casestudy.png" alt="Datalynx case study cover"><img src="img/whitepaper.png" alt="Datalynx white paper cover"></div><div class="body"><span class="cap">Sales &amp; marketing collateral</span><h4>Datalynx — case studies &amp; white papers</h4><p>Client-ready case studies and white papers. <span style="color:var(--faint)">+ LinkedIn posts, banners, partner decks.</span></p><div class="dual-cta"><a href="https://143849563.fs1.hubspotusercontent-eu1.net/hubfs/143849563/datalynx-case-study-dcj-phoenix.pdf" target="_blank" rel="noopener">Preview case study &rarr;</a><a href="https://datalynx.com.au/legacy-data-tax" target="_blank" rel="noopener">Preview white paper &rarr;</a></div></div></div>
     </div>
   </div>
 
   <div class="sec">
     <div class="kick">What it costs — a whole growth function, for less than one hire</div>
     <div class="tiers">
-      <div class="tier"><div class="nm">Start</div><div class="amt pop">$3k<span>/mo</span></div><div class="inc">Brain + 1 agent</div><div class="note">Your first hire — the website or lead-gen.</div></div>
-      <div class="tier hl"><div class="nm">Growth</div><div class="amt pop">$6k<span>/mo</span></div><div class="inc">Brain + 3 agents</div><div class="note">A working growth team.</div></div>
-      <div class="tier"><div class="nm">Full · me in the room</div><div class="amt pop">$12k<span>/mo</span></div><div class="inc">Full team + I show up</div><div class="note">Everything, and I run the room — what Elia gets. Add owned products from here.</div></div>
+      <div class="tier"><div class="nm">Build</div><div class="amt pop">$3k<span>/mo</span></div><div class="inc">Brain + 1 agent</div><div class="note">Your first hire — the website or lead-gen.</div></div>
+      <div class="tier hl"><div class="nm">Grow</div><div class="amt pop">$6k<span>/mo</span></div><div class="inc">Brain + 3 agents</div><div class="note">A working growth team.</div></div>
+      <div class="tier"><div class="nm">Accelerate</div><div class="amt pop">$12k<span>/mo</span></div><div class="inc">Full team + owned products</div><div class="note">The whole growth function, then products that compound.</div></div>
     </div>
-    <div class="cmpline"><b>$12k gets you the whole growth function</b> — website, brand, marketing, sales, outreach and me. <span class="g">A fractional CMO is $8–25k and only does marketing. An agency is $2–8k and only does marketing. You're replacing a department, not buying an app.</span></div>
+    <div class="ctbl-wrap" style="margin-top:16px"><table class="ctbl">
+      <thead><tr><th>Your real options</th><th>Price</th><th>What it covers</th><th>Your effort</th></tr></thead>
+      <tbody>
+        <tr><td class="opt">DIY AI tools<span>Claude, Delphi, Spine</span></td><td>$20–300/mo</td><td>one task, if you drive it</td><td>you do all of it</td></tr>
+        <tr><td class="opt">A hire<span>coordinator &rarr; fractional CMO</span></td><td>$6–25k/mo</td><td>one function</td><td>you manage them</td></tr>
+        <tr><td class="opt">A marketing agency<span>the usual suspects</span></td><td>$2–8k/mo</td><td>marketing only</td><td>you brief &amp; chase</td></tr>
+        <tr class="win"><td class="opt">NewCo<span>brain + agents + me</span></td><td>$3–12k/mo</td><td>your whole growth function</td><td>you approve &mdash; that&rsquo;s it</td></tr>
+      </tbody>
+    </table></div>
   </div>
 
   <div class="sec">
     <div class="kick">About me</div>
     <div class="about">
       <div class="me">MC</div>
-      <div><h4>Matt Collis</h4><p><b>Two prior exits</b>, founder of <b>StackGo</b> (a live compliance platform used by accounting firms), and I'm personally in the room on every account. The agents do the volume; I make sure the results are real.</p></div>
-    </div>
-  </div>
-
-  <div class="sec">
-    <div class="kick">Try it — no app to log into</div>
-    <div class="email-cta">
-      <div>
-        <h3 class="pop" style="font-size:21px;margin:0 0 6px">You talk to your brain by <span style="color:var(--beam)">email</span>.</h3>
-        <p style="margin:0;font-size:14px;color:var(--slate);max-width:58ch">That's the whole product — no dashboard, no login. You email it, it emails back. Ask it anything about your business, or about this. Right now that's me and the agents behind it; automatic soon.</p>
-        <div class="em" style="margin-top:8px">matt@stackgo.io</div>
-      </div>
-      <a class="email-btn" href="mailto:matt@stackgo.io?subject=Ask%20NewCo%27s%20brain&body=Hey%20Matt%20%E2%80%94%20a%20question%20for%20NewCo%27s%20brain%3A%0A%0A">Email the brain &rarr;</a>
+      <div><h4>Matt Collis</h4><p>I've built and sold two companies, and I run StackGo today. But the thing I'm actually chasing is this: <b>one person, backed by a team of agents, doing what used to take a whole firm.</b> NewCo is me proving it &mdash; on real businesses, with my name on every account. I'd rather build that with a handful of people I trust than a big team I don't.</p></div>
     </div>
   </div>
 
   <div class="close">
-    <div class="eyebrow">Over to you, Paul</div>
-    <h2 class="pop">What do you make of it?</h2>
-    <p>I want your honest read first — you know this world better than I do. And if any of it's for you, there are a few ways in. Tell me which feels right, and where you'd want to start.</p>
-    <div class="doors">
-      <div class="door"><h4>Be a customer</h4><p>one of the first five</p></div>
-      <div class="door"><h4>Advise me</h4><p>shape it with your experience</p></div>
-      <div class="door"><h4>Take equity</h4><p>help me build it</p></div>
+    <div class="eyebrow">Your move, Paul</div>
+    <h2 class="pop">Have a look, then tell me what you think.</h2>
+    <p>I built your brain earlier — open it and have a play. Then hit reply and send me your honest take. No deck, no meeting needed unless you want one.</p>
+    <div class="finalcta">
+      <a class="fbtn light" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">See the brain I built you &rarr;</a>
+      <a class="fbtn solid" href="mailto:matt@stackgo.io?subject=NewCo%20%E2%80%94%20my%20thoughts&body=Hey%20Matt%2C%20here%27s%20my%20honest%20take%3A%0A%0A1.%20Does%20the%20pain%20ring%20true%20for%20me%20and%20the%20advisors%20I%20know%3F%0A%0A2.%20Would%20I%20pay%20for%20this%2C%20and%20what%20feels%20fair%3F%0A%0A3.%20Would%20I%20send%20a%20few%20people%20your%20way%3F%0A%0A4.%20Beyond%20being%20a%20customer%20%E2%80%94%20advising%2C%20equity%2C%20something%20else%20%E2%80%94%20anything%20there%20for%20me%3F%0A%0A">Email me your thoughts &rarr;</a>
     </div>
   </div>
 
