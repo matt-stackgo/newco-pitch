@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NewCo — for Paul</title>
+<meta name="description" content="A second brain for your company, then a growth team of AI agents that runs it — built for Paul.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --beam:#0055FF; --beam-ink:#0042cc; --beam-tint:#EFF4FF; --beam-soft:#F5F8FF;
+  --ink:#0F172A; --slate:#5A6576; --faint:#94A3B8; --line:#E5E9F0; --line2:#EEF2F7;
+  --snow:#F7F9FC; --card:#FFFFFF; --green:#16A34A;
+  --shadow:0 1px 0 rgba(15,23,42,.03), 0 24px 54px -34px rgba(15,23,42,.4);
+}
+@media (prefers-color-scheme:dark){:root{
+  --beam:#5B93FF; --beam-ink:#8FB6FF; --beam-tint:#132445; --beam-soft:#0F1A2E;
+  --ink:#EAF0FA; --slate:#9BA7B8; --faint:#6B7688; --line:#25303F; --line2:#1C2634;
+  --snow:#0B0F17; --card:#131A26; --green:#4ADE80;
+  --shadow:0 1px 0 rgba(0,0,0,.2), 0 26px 60px -34px rgba(0,0,0,.75);
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--snow);color:var(--ink);line-height:1.55;
+  font-family:'Nunito',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+.pop{font-family:'Poppins',system-ui,sans-serif}
+h1,h2,h3,h4{font-family:'Poppins',system-ui,sans-serif;margin:0}
+a{color:var(--beam-ink);text-decoration:none}
+.wrap{max-width:1020px;margin:0 auto;padding:32px 24px 70px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px}
+.mk{width:31px;height:31px;border-radius:9px;background:var(--beam);color:#fff;display:grid;place-items:center;font-weight:800;font-size:16px;box-shadow:0 8px 18px -8px var(--beam)}
+.forp{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--beam-ink);background:var(--beam-tint);border-radius:6px;padding:6px 11px;font-weight:700}
+.eyebrow{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--beam);font-weight:700}
+.hero{padding:34px 0 8px}
+h1{font-weight:800;font-size:clamp(31px,5.2vw,50px);line-height:1.04;letter-spacing:-1.4px;margin:13px 0 14px;max-width:17ch}
+h1 .b{color:var(--beam)}
+.lede{font-size:clamp(16px,2.1vw,20px);color:var(--slate);max-width:58ch;margin:0}
+.lede b{color:var(--ink)}
+.sec{margin-top:44px}
+.kick{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.kick:after{content:"";flex:1;height:1px;background:var(--line)}
+h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
+.flow{display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr;align-items:center;gap:0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px;box-shadow:var(--shadow)}
+.step .n{width:30px;height:30px;border-radius:9px;background:var(--beam-tint);color:var(--beam-ink);font-weight:800;font-size:15px;display:grid;place-items:center;margin-bottom:11px;font-family:'Poppins'}
+.step h3{font-size:16px;font-weight:700;margin-bottom:5px}
+.step p{margin:0;font-size:13.5px;color:var(--slate)}
+.ar{display:grid;place-items:center;color:var(--faint)}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ag{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;position:relative}
+.ag.on{border-color:var(--beam);box-shadow:0 0 0 1px var(--beam) inset}
+.ag .num{font-family:ui-monospace,Menlo,monospace;font-size:10px;color:var(--faint);font-weight:700}
+.ag h4{font-size:15px;font-weight:700;margin:4px 0 3px}
+.ag p{margin:0;font-size:12.5px;color:var(--slate)}
+.ag .tag{position:absolute;top:13px;right:13px;font-family:ui-monospace,Menlo,monospace;font-size:8.5px;font-weight:700;letter-spacing:.03em;color:#fff;background:var(--beam);border-radius:5px;padding:3px 7px}
+.teamnote{font-size:13.5px;color:var(--slate);margin-top:14px;text-align:center}
+.teamnote b{color:var(--ink)}
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.pc .shot{height:150px;overflow:hidden;border-bottom:1px solid var(--line);background:var(--snow)}
+.pc .shot img{width:100%;display:block;object-fit:cover;object-position:top}
+.pc .body{padding:13px 15px 15px;display:flex;flex-direction:column;flex:1}
+.pc .cap{font-family:ui-monospace,Menlo,monospace;font-size:9px;letter-spacing:.05em;text-transform:uppercase;color:var(--beam-ink);background:var(--beam-tint);border-radius:5px;padding:3px 7px;align-self:flex-start;font-weight:700;margin-bottom:8px}
+.pc h4{font-size:15px;font-weight:700;margin-bottom:3px}
+.pc p{margin:0 0 10px;font-size:12.5px;color:var(--slate);flex:1}
+.pc a.link{font-weight:700;font-size:12.5px;color:var(--beam-ink)}
+.pc .priv{font-size:12px;color:var(--faint);font-weight:700}
+.prooflead{font-size:14px;color:var(--ink);margin:0 0 16px;max-width:70ch}.prooflead b{color:var(--beam-ink)}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.tier{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);position:relative}
+.tier.hl{border-color:var(--beam);box-shadow:0 0 0 1px var(--beam) inset,var(--shadow)}
+.tier .nm{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:700}
+.tier.hl .nm{color:var(--beam)}
+.tier .amt{font-weight:800;font-size:31px;letter-spacing:-1px;margin:5px 0 1px;font-family:'Poppins'}
+.tier .amt span{font-size:14px;color:var(--faint);font-weight:600;letter-spacing:0}
+.tier .inc{font-size:13.5px;font-weight:700;margin:7px 0 3px}
+.tier .note{font-size:12.5px;color:var(--slate)}
+.cmpline{font-size:14px;color:var(--ink);margin-top:14px}.cmpline b{color:var(--beam-ink)}
+.cmpline .g{color:var(--slate)}
+.about{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:16px 18px;box-shadow:var(--shadow)}
+.about .me{width:46px;height:46px;border-radius:12px;background:var(--beam);color:#fff;font-weight:800;font-size:18px;display:grid;place-items:center;flex:none;font-family:'Poppins'}
+.about h4{font-size:15px;font-weight:700;margin-bottom:3px}
+.about p{margin:0;font-size:13px;color:var(--slate)}.about b{color:var(--ink)}
+.close{background:var(--beam);color:#fff;border-radius:20px;padding:30px 30px 28px;margin-top:46px;box-shadow:0 24px 54px -28px var(--beam)}
+.close .eyebrow{color:rgba(255,255,255,.8)}
+.close h2{margin:8px 0 12px;color:#fff}
+.close p{font-size:16px;color:rgba(255,255,255,.92);max-width:64ch;margin:0 0 20px}
+.doors{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.door{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:13px;padding:15px 16px}
+.door h4{font-size:15px;font-weight:800;margin-bottom:3px;color:#fff}
+.door p{font-size:12.5px;color:rgba(255,255,255,.82);margin:0}
+.foot{margin-top:24px;font-size:11px;color:var(--faint);text-align:center;font-family:ui-monospace,Menlo,monospace}
+@media(max-width:780px){.flow{grid-template-columns:1fr}.ar{transform:rotate(90deg);height:26px}.team,.proof,.tiers,.doors{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav">
+    <span class="brand"><span class="mk">N</span> NewCo</span>
+    <span class="forp">For Paul · Aug 2026</span>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">A second brain for your company</div>
+    <h1 class="pop">Paul — let me build your company a <span class="b">second brain.</span></h1>
+    <p class="lede">Then a <b>growth team of AI agents runs on top of it</b> — your website, brand, marketing, sales tools and outreach, done for you. All the value of a growth department, practically none of your effort.</p>
+  </div>
+
+  <div class="sec">
+    <div class="kick">How it works</div>
+    <div class="flow">
+      <div class="step"><div class="n">1</div><h3>I build your brain</h3><p>From your website and public footprint — a first version in minutes, like the one you've already seen.</p></div>
+      <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
+      <div class="step"><div class="n">2</div><h3>It maps your company</h3><p>Your offer, clients and gaps — one explorable map you own and can trust.</p></div>
+      <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
+      <div class="step"><div class="n">3</div><h3>Then it runs your growth</h3><p>It flags what to fix, then does it — a team of agents you switch on one at a time.</p></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="kick">Your growth team</div>
+    <div class="team">
+      <div class="ag on"><span class="tag">Start here</span><div class="num">01</div><h4>Website</h4><p>We build and run your site.</p></div>
+      <div class="ag on"><span class="tag">Start here</span><div class="num">02</div><h4>Cold outreach · BDR</h4><p>We run outbound and book meetings.</p></div>
+      <div class="ag"><div class="num">03</div><h4>Brand &amp; identity</h4><p>Your brand, done properly.</p></div>
+      <div class="ag"><div class="num">04</div><h4>Product marketing</h4><p>Landing pages, launch &amp; content.</p></div>
+      <div class="ag"><div class="num">05</div><h4>Sales tools &amp; assets</h4><p>Tools and collateral that close.</p></div>
+      <div class="ag"><div class="num">06</div><h4>Advisory — me in the room</h4><p>Strategy, and I show up personally.</p></div>
+    </div>
+    <div class="teamnote"><b>Start with the two your brain flags</b> — for you and Anthony that was the website and lead-gen. Add seats as you grow. The full six is exactly what runs for Elia at <b>$12k/mo</b>.</div>
+  </div>
+
+  <div class="sec">
+    <div class="kick">Proof — this is live, not a deck</div>
+    <p class="prooflead">Every one of these is a <b>real site, tool or engine we built and run</b> — most are one click away. This is the team working.</p>
+    <div class="proof">
+      <div class="pc"><div class="shot"><img src="img/datalynx.png" alt="Datalynx website"></div><div class="body"><span class="cap">Website</span><h4>Datalynx</h4><p>An enterprise migration site with a live ROI calculator, built end-to-end.</p><a class="link" href="https://datalynx.com.au" target="_blank" rel="noopener">datalynx.com.au →</a></div></div>
+      <div class="pc"><div class="shot"><img src="img/tranche2.png" alt="StackGo Tranche 2 landing page"></div><div class="body"><span class="cap">Product marketing</span><h4>StackGo — Tranche 2 launch</h4><p>A product-launch landing page built around a hard compliance deadline.</p><a class="link" href="https://stackgo.io/identitycheck/tranche-2/" target="_blank" rel="noopener">stackgo.io →</a></div></div>
+      <div class="pc"><div class="shot"><img src="img/actiondemo.png" alt="Action Demolition website"></div><div class="body"><span class="cap">Brand + website</span><h4>Action Demolition</h4><p>A full brand and website for a Sydney trades business, top to bottom.</p><a class="link" href="https://action-build-clear.lovable.app/" target="_blank" rel="noopener">see the site →</a></div></div>
+      <div class="pc"><div class="shot"><img src="img/help.png" alt="StackGo help centre"></div><div class="body"><span class="cap">Content · self-serve</span><h4>StackGo help centre</h4><p>An AI-grounded help centre that answers customers so the team doesn't have to.</p><a class="link" href="https://help.stackgo.io" target="_blank" rel="noopener">help.stackgo.io →</a></div></div>
+      <div class="pc"><div class="shot"><img src="img/markrobb.png" alt="Mark Robb ASX300 dashboard"></div><div class="body"><span class="cap">Sales tool</span><h4>Mark Robb — ASX300 agent</h4><p>A live decision-support dashboard built for a trader, from spec to shipped.</p><span class="priv">Private client tool</span></div></div>
+      <div class="pc" style="justify-content:center;align-items:center;text-align:center;background:var(--beam-soft)"><div class="body" style="justify-content:center"><span class="cap" style="align-self:center">Cold outreach</span><h4>Datalynx BDR engine</h4><p>AI outbound that researches, writes and books — running quietly in the background.</p><span class="priv">Live engine</span></div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="kick">What it costs — a whole growth function, for less than one hire</div>
+    <div class="tiers">
+      <div class="tier"><div class="nm">Start</div><div class="amt pop">$3k<span>/mo</span></div><div class="inc">Brain + 2 agents</div><div class="note">Fix the site, turn on leads.</div></div>
+      <div class="tier hl"><div class="nm">Full growth team</div><div class="amt pop">$12k<span>/mo</span></div><div class="inc">Brain + 6 agents + me in the room</div><div class="note">The whole growth function — what Elia gets.</div></div>
+      <div class="tier"><div class="nm">+ Products</div><div class="amt pop">$12k+<span>/mo</span></div><div class="inc">Add owned products</div><div class="note">e.g. a branded academy — new revenue, higher tier.</div></div>
+    </div>
+    <div class="cmpline"><b>$12k gets you the whole growth function</b> — website, brand, marketing, sales, outreach and me. <span class="g">A fractional CMO is $8–25k and only does marketing. An agency is $2–8k and only does marketing. You're replacing a department, not buying an app.</span></div>
+  </div>
+
+  <div class="sec">
+    <div class="kick">About me</div>
+    <div class="about">
+      <div class="me">MC</div>
+      <div><h4>Matt Collis</h4><p><b>Two prior exits</b>, founder of <b>StackGo</b> (a live compliance platform used by accounting firms), and I'm personally in the room on every account. The agents do the volume; I make sure the results are real.</p></div>
+    </div>
+  </div>
+
+  <div class="close">
+    <div class="eyebrow">Over to you, Paul</div>
+    <h2 class="pop">What do you make of it?</h2>
+    <p>I want your honest read first — you know this world better than I do. And if any of it's for you, there are a few ways in. Tell me which feels right, and where you'd want to start.</p>
+    <div class="doors">
+      <div class="door"><h4>Be a customer</h4><p>one of the first five</p></div>
+      <div class="door"><h4>Advise me</h4><p>shape it with your experience</p></div>
+      <div class="door"><h4>Take equity</h4><p>help me build it</p></div>
+    </div>
+  </div>
+
+  <div class="foot">Working draft for Paul · Aug 2026 · figures proposed &amp; to validate</div>
+</div>
+</body>
+</html>
