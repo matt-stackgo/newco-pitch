@@ -38,21 +38,19 @@ h1 .b{color:var(--beam)}
 .kick{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:12px}
 .kick:after{content:"";flex:1;height:1px;background:var(--line)}
 h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
-.flow{display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr;align-items:center;gap:0}
-.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px;box-shadow:var(--shadow)}
+.flow{display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr;align-items:stretch;gap:0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column}
 .step .n{width:30px;height:30px;border-radius:9px;background:var(--beam-tint);color:var(--beam-ink);font-weight:800;font-size:15px;display:grid;place-items:center;margin-bottom:11px;font-family:'Poppins'}
 .step h3{font-size:16px;font-weight:700;margin-bottom:5px}
 .step p{margin:0;font-size:13.5px;color:var(--slate)}
 .ar{display:grid;place-items:center;color:var(--faint)}
-.startcta{text-align:center;margin-top:22px}
+.startcta{text-align:center;margin-top:24px}
 .startbtn{display:inline-block;font-family:'Poppins',sans-serif;font-weight:800;font-size:16px;color:#fff;background:var(--beam);padding:15px 30px;border-radius:13px;box-shadow:0 14px 30px -12px var(--beam);text-decoration:none}
-.startnote{font-size:12.5px;color:var(--faint);margin-top:9px}
-.incl{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.inclc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow)}
-.inclc .ic{width:30px;height:30px;border-radius:9px;background:var(--beam-tint);color:var(--beam-ink);display:grid;place-items:center;margin-bottom:10px}
-.inclc .ic svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.inclc h4{font-size:14px;font-weight:700;margin-bottom:3px}
-.inclc p{margin:0;font-size:12.5px;color:var(--slate)}
+.startbtn.sm{font-size:14px;padding:11px 20px}
+.freefeat{max-width:540px;margin:15px auto 0;display:flex;flex-direction:column;gap:8px;text-align:left}
+.freefeat .ff{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--slate)}
+.freefeat .ff svg{width:15px;height:15px;flex:none;margin-top:2px;stroke:var(--beam);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.freefeat .ff b{color:var(--ink);font-weight:700}
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .ag{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;position:relative}
 .ag h4{font-size:15px;font-weight:700;margin:4px 0 3px}
@@ -78,6 +76,17 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
 .dual-cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:2px}
 .dual-cta a{font-weight:700;font-size:12px;color:var(--beam-ink)}
 .proofnote{margin-top:15px;font-size:12.5px;color:var(--slate);text-align:center;max-width:74ch;margin-left:auto;margin-right:auto}.proofnote b{color:var(--ink)}
+.incl{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.inclc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow)}
+.inclc .ic{width:30px;height:30px;border-radius:9px;background:var(--beam-tint);color:var(--beam-ink);display:grid;place-items:center;margin-bottom:10px}
+.inclc .ic svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.inclc h4{font-size:14px;font-weight:700;margin-bottom:3px}
+.inclc p{margin:0;font-size:12.5px;color:var(--slate)}
+.freeplan{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--raised);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin-bottom:13px}
+.freeplan .fp-l{font-size:13.5px;color:var(--slate)}
+.freeplan .fp-l b{color:var(--ink)}
+.freeplan .fp-nm{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--beam);font-weight:700;margin-right:9px}
+.freeplan .fp-amt{font-family:'Poppins';font-weight:800;font-size:20px;color:var(--ink);margin-right:9px}
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
 .tier{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);position:relative}
 .tier.hl{border-color:var(--beam);box-shadow:0 0 0 1px var(--beam) inset,var(--shadow)}
@@ -145,25 +154,19 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
   <div class="sec">
     <div class="kick">How it works</div>
     <div class="flow">
-      <div class="step"><div class="n">1</div><h3>I start with what&rsquo;s public</h3><p>Your website first, then everything else that&rsquo;s already out there about you. No logins, no homework &mdash; a first brain in minutes.</p></div>
+      <div class="step"><div class="n">1</div><h3>Public scan</h3><p>I read your website first, then everything else already public about you. No logins, no homework.</p></div>
       <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
-      <div class="step"><div class="n">2</div><h3>I compile your second brain</h3><p>One brain from all of it &mdash; spotting your gaps and opportunities. Watch it build, live.</p></div>
+      <div class="step"><div class="n">2</div><h3>Compile</h3><p>It all becomes one connected brain &mdash; your gaps and opportunities, mapped. Watch it build, live.</p></div>
       <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
-      <div class="step"><div class="n">3</div><h3>I show you your next best actions</h3><p>The highest-leverage things to do next, ranked and ready to go.</p></div>
+      <div class="step"><div class="n">3</div><h3>Awake</h3><p>It comes alive with your next best actions, ranked &mdash; and refreshes them for you every week.</p></div>
     </div>
-    <div class="startcta"><a class="startbtn" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">Start now &mdash; it&rsquo;s free &rarr;</a><div class="startnote">A first version of your brain in minutes. No commitment.</div></div>
-  </div>
-
-  <div class="sec">
-    <div class="kick">Sometimes you&rsquo;ll want paid hands</div>
-    <p class="prooflead" style="margin-bottom:16px">When your brain flags something big &mdash; rebuild the site, switch on outreach, ship a product &mdash; you can put an agent on it to just do it. Your on-call exec team:</p>
-    <div class="team">
-      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h4>Website</h4><p>We build and run your site.</p></div>
-      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div><h4>Cold outreach &middot; BDR</h4><p>We run outbound and book meetings.</p></div>
-      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M4 7l2 1M18 16l2 1M4 17l2-1M18 8l2-1"/><circle cx="12" cy="12" r="3.5"/></svg></div><h4>Brand &amp; identity</h4><p>Your brand, done properly.</p></div>
-      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><path d="m3 11 15-4v11L3 15v-4z"/><path d="M11 15.5a2.6 2.6 0 0 1-5 .7"/><path d="M18 8a3 3 0 0 1 0 6"/></svg></div><h4>Product marketing</h4><p>Landing pages, launch &amp; content.</p></div>
-      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5"/><line x1="12" y1="12" x2="12" y2="22"/></svg></div><h4>Sales tools &amp; assets</h4><p>Tools and collateral that close.</p></div>
-      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h4>Developer</h4><p>Apps and products that automate and enhance your offering.</p></div>
+    <div class="startcta">
+      <a class="startbtn" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">Start now &mdash; free forever &rarr;</a>
+      <div class="freefeat">
+        <div class="ff"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>Just create your account</b> to start &mdash; free, forever.</span></div>
+        <div class="ff"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Your <b>next best actions, refreshed weekly</b>, with a nudge to keep you moving (turn it off any time).</span></div>
+        <div class="ff"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><b>Chat to your brain</b> &mdash; up to 5 messages a day.</span></div>
+      </div>
     </div>
   </div>
 
@@ -185,7 +188,20 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
   </div>
 
   <div class="sec">
-    <div class="kick">Every plan includes</div>
+    <div class="kick">Paid plans</div>
+    <p class="prooflead" style="margin-bottom:16px">When your brain flags something big &mdash; rebuild the site, switch on outreach, ship a product &mdash; you can put an agent on it to just do it. Your on-call exec team:</p>
+    <div class="team">
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h4>Presence</h4><p>Your website and brand identity, built and run.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div><h4>Outbound</h4><p>We run outreach and book you meetings.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h4>Inbound</h4><p>Marketing that brings people to you &mdash; content, SEO, campaigns.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5"/><line x1="12" y1="12" x2="12" y2="22"/></svg></div><h4>Product</h4><p>Launches and go-to-market for what you sell.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><h4>Assets</h4><p>Sales tools and collateral that close.</p></div>
+      <div class="ag"><div class="ag-ic"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h4>Developer</h4><p>Apps and products that automate and enhance your offering.</p></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="kick">Every paid plan includes</div>
     <div class="incl">
       <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 12 15 15"/></svg></div><h4>Your own files</h4><p>Upload decks, proposals and folders to feed the brain &mdash; up to 5&nbsp;GB.</p></div>
       <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Secure by default</h4><p>Encrypted in transit and at rest, 2FA login, and all your data held in Australia.</p></div>
@@ -197,14 +213,18 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
   </div>
 
   <div class="sec">
-    <div class="kick">What it costs — a whole growth function, for less than one hire</div>
-    <p class="prooflead" style="margin-bottom:16px">A brain on its own just helps you <i>think</i> &mdash; and if you work off it yourself, that&rsquo;s the DIY tools below. The value is <b>agents doing the work for you</b>. So every plan is your brain plus the agents you choose:</p>
+    <div class="kick">Pricing</div>
+    <p class="prooflead" style="margin-bottom:16px">A brain on its own just helps you <i>think</i> &mdash; and if you work off it yourself, that&rsquo;s the DIY tools below. The value is <b>agents doing the work for you</b>. So every paid plan is your brain plus the agents you choose:</p>
+    <div class="freeplan">
+      <div class="fp-l"><span class="fp-nm">Free forever</span><span class="fp-amt">$0</span>Your brain, your weekly next best actions, and chat (5/day). Just create your account.</div>
+      <a class="startbtn sm" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">Start free &rarr;</a>
+    </div>
     <div class="tiers">
       <div class="tier"><div class="nm">Build</div><div class="amt pop">$3k<span>/mo</span></div><div class="inc">Brain + 1 agent</div><div class="note">Your first hire — the website or lead-gen.</div></div>
       <div class="tier hl"><div class="nm">Grow</div><div class="amt pop">$6k<span>/mo</span></div><div class="inc">Brain + 3 agents</div><div class="note">A working growth team.</div></div>
       <div class="tier"><div class="nm">Accelerate</div><div class="amt pop">$12k<span>/mo</span></div><div class="inc">Full growth team</div><div class="note">The whole function, running for you.</div></div>
     </div>
-    <div class="corenote"><b>Every plan includes your Core brain</b> — one user, managed cloud in Australia, secure, up to 5&nbsp;GB storage, 6-month minimum term. Add or scale agents any time; grow to bigger teams of any agent as you go.</div>
+    <div class="corenote"><b>Every paid plan includes your Core brain</b> — one user, managed cloud in Australia, secure, up to 5&nbsp;GB storage, 6-month minimum term. Add or scale agents any time; grow to bigger teams of any agent as you go.</div>
     <div class="upsell">
       <div class="top"><h4>Upgrade: the Dedicated brain</h4><span class="px">from $20k build + $5k/mo</span></div>
       <p class="sub">When you want your brain in its own private environment, for the whole team &mdash; a bigger, engineer-supported build for firms that need more than the Core brain.</p>
