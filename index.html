@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NewCo — for Paul</title>
-<meta name="description" content="A second brain for your company, then a growth team of AI agents that runs it — built for Paul.">
+<meta name="description" content="A second brain for your company, then a team of AI agents that runs it — built for Paul.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 :root{
   --beam:#0055FF; --beam-ink:#0048d6; --beam-tint:#EFF4FF; --beam-soft:#F5F8FF;
   --ink:#0F172A; --slate:#64748B; --faint:#94A3B8; --line:#E2E8F0; --line2:#F1F5F9;
-  --snow:#FAFAFA; --card:#FFFFFF; --raised:#F8FAFC; --green:#16A34A;
+  --snow:#FAFAFA; --card:#FFFFFF; --raised:#F8FAFC;
   --shadow:0 1px 0 rgba(15,23,42,.03), 0 24px 54px -34px rgba(15,23,42,.4);
 }
 *{box-sizing:border-box}
@@ -21,50 +21,45 @@ body{margin:0;background:var(--snow);color:var(--ink);line-height:1.55;
 .pop{font-family:'Poppins',system-ui,sans-serif}
 h1,h2,h3,h4{font-family:'Poppins',system-ui,sans-serif;margin:0}
 a{color:var(--beam-ink);text-decoration:none}
-.wrap{max-width:1020px;margin:0 auto;padding:32px 24px 70px}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 24px 70px}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px}
 .mk{width:31px;height:31px;border-radius:9px;background:var(--beam);color:#fff;display:grid;place-items:center;font-weight:800;font-size:16px;box-shadow:0 8px 18px -8px var(--beam)}
 .forp{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--beam-ink);background:var(--beam-tint);border-radius:6px;padding:6px 11px;font-weight:700}
 .conf{background:var(--beam-tint);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-top:16px;font-size:13px;color:var(--slate)}
 .conf b{color:var(--ink)}
-.eyebrow{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--beam);font-weight:700}
-.hero{padding:30px 0 8px}
-h1{font-weight:800;font-size:clamp(31px,5.2vw,50px);line-height:1.04;letter-spacing:-1.4px;margin:13px 0 14px;max-width:17ch}
+.hero{padding:34px 0 6px}
+h1{font-weight:800;font-size:clamp(32px,5.4vw,52px);line-height:1.03;letter-spacing:-1.5px;margin:0 0 16px;max-width:16ch}
 h1 .b{color:var(--beam)}
-.lede{font-size:clamp(16px,2.1vw,20px);color:var(--slate);max-width:58ch;margin:0}
+.lede{font-size:clamp(17px,2.2vw,21px);color:var(--slate);max-width:52ch;margin:0}
 .lede b{color:var(--ink)}
-.sec{margin-top:44px}
-.kick{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:12px}
-.kick:after{content:"";flex:1;height:1px;background:var(--line)}
-h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
-.who{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 26px;box-shadow:var(--shadow);border-left:4px solid var(--beam)}
-.who h2{margin-bottom:11px;max-width:24ch}
-.who p{font-size:15px;color:var(--slate);max-width:66ch;margin:0 0 15px}.who p b{color:var(--ink)}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
+.sec{margin-top:54px}
+.hd{font-family:'Poppins',system-ui,sans-serif;font-weight:800;font-size:clamp(22px,2.9vw,28px);letter-spacing:-.7px;margin:0 0 6px;max-width:22ch;text-wrap:balance}
+.sub{font-size:16px;color:var(--slate);max-width:60ch;margin:0 0 22px}.sub b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .chip{font-family:ui-monospace,Menlo,monospace;font-size:11px;font-weight:700;letter-spacing:.03em;color:var(--beam-ink);background:var(--beam-tint);border-radius:999px;padding:7px 13px}
-.flow{display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr;align-items:stretch;gap:0}
+.mb0{margin-bottom:20px}
+.flow{display:grid;grid-template-columns:1fr 26px 1fr 26px 1fr;align-items:stretch;gap:0}
 .step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column}
-.step .n{width:30px;height:30px;border-radius:9px;background:var(--beam-tint);color:var(--beam-ink);font-weight:800;font-size:15px;display:grid;place-items:center;margin-bottom:11px;font-family:'Poppins'}
+.step .n{width:29px;height:29px;border-radius:9px;background:var(--beam-tint);color:var(--beam-ink);font-weight:800;font-size:14px;display:grid;place-items:center;margin-bottom:11px;font-family:'Poppins'}
 .step h3{font-size:16px;font-weight:700;margin-bottom:5px}
 .step p{margin:0;font-size:13.5px;color:var(--slate)}
 .ar{display:grid;place-items:center;color:var(--faint)}
 .startcta{text-align:center;margin-top:24px}
-.startbtn{display:inline-block;font-family:'Poppins',sans-serif;font-weight:800;font-size:16px;color:#fff;background:var(--beam);padding:15px 30px;border-radius:13px;box-shadow:0 14px 30px -12px var(--beam);text-decoration:none}
-.freepanel{margin-top:22px;border:1px solid var(--beam);background:var(--beam-soft);border-radius:18px;padding:22px 24px;box-shadow:var(--shadow)}
-.freepanel .fh{display:flex;align-items:center;gap:12px;margin-bottom:17px;flex-wrap:wrap}
+.startbtn{display:inline-block;font-family:'Poppins',sans-serif;font-weight:800;font-size:16px;color:#fff;background:var(--beam);padding:15px 32px;border-radius:13px;box-shadow:0 14px 30px -12px var(--beam);text-decoration:none}
+.freepanel{margin-top:20px;border:1px solid var(--beam);background:var(--beam-soft);border-radius:18px;padding:20px 24px;box-shadow:var(--shadow)}
+.freepanel .fh{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
 .freepanel .badge{font-family:ui-monospace,Menlo,monospace;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--beam);border-radius:6px;padding:6px 11px}
-.freepanel h3{font-size:17px;font-weight:800}
-.fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 24px}
-.fitem{display:flex;gap:12px;align-items:flex-start}
-.fitem .fi-ic{width:34px;height:34px;border-radius:10px;background:#fff;color:var(--beam);display:grid;place-items:center;flex:none;box-shadow:0 6px 14px -8px var(--beam)}
-.fitem .fi-ic svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.fitem b{font-size:13.5px;color:var(--ink);font-weight:700;display:block;margin-bottom:1px}
+.freepanel h3{font-size:16px;font-weight:800}
+.fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px 24px}
+.fitem{display:flex;gap:11px;align-items:center}
+.fitem .fi-ic{width:32px;height:32px;border-radius:9px;background:#fff;color:var(--beam);display:grid;place-items:center;flex:none;box-shadow:0 6px 14px -8px var(--beam)}
+.fitem .fi-ic svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.fitem b{font-size:13.5px;color:var(--ink);font-weight:700;display:block}
 .fitem span{font-size:12px;color:var(--slate)}
-.prooflead{font-size:14px;color:var(--ink);margin:0 0 16px;max-width:72ch}.prooflead b{color:var(--beam-ink)}
 .proof{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .pc{background:var(--card);border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
-.pc .shot{height:150px;overflow:hidden;border-bottom:1px solid var(--line);background:var(--snow)}
+.pc .shot{height:148px;overflow:hidden;border-bottom:1px solid var(--line);background:var(--snow)}
 .pc .shot img{width:100%;display:block;object-fit:cover;object-position:top}
 .pc .shot.dual{display:flex;gap:0}
 .pc .shot.dual img{width:50%;height:100%;border-right:1px solid var(--line)}
@@ -75,46 +70,45 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
 .pc a.link{font-weight:700;font-size:12.5px;color:var(--beam-ink)}
 .pc .priv{font-size:12px;color:var(--faint);font-weight:700}
 .pc .stat{display:flex;align-items:baseline;gap:7px;margin:0 0 10px}
-.pc .stat b{font-family:'Poppins',sans-serif;font-weight:800;font-size:17px;color:var(--beam-ink);line-height:1;white-space:nowrap}
+.pc .stat b{font-family:'Poppins',sans-serif;font-weight:800;font-size:16px;color:var(--beam-ink);line-height:1;white-space:nowrap}
 .pc .stat span{font-size:11px;color:var(--slate);line-height:1.25}
 .dual-cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:2px}
 .dual-cta a{font-weight:700;font-size:12px;color:var(--beam-ink)}
-.proofnote{margin-top:15px;font-size:12.5px;color:var(--slate);text-align:center;max-width:74ch;margin-left:auto;margin-right:auto}.proofnote b{color:var(--ink)}
+.proofnote{margin-top:15px;font-size:12.5px;color:var(--slate);text-align:center}.proofnote b{color:var(--ink)}
 .roles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.role{display:flex;gap:13px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 17px;box-shadow:var(--shadow)}
-.role .r-ic{width:38px;height:38px;border-radius:11px;background:var(--beam-tint);color:var(--beam-ink);display:grid;place-items:center;flex:none}
-.role .r-ic svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.role h4{font-size:15px;font-weight:700;margin-bottom:2px}
+.role{display:flex;gap:13px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 17px;box-shadow:var(--shadow)}
+.role .r-ic{width:36px;height:36px;border-radius:10px;background:var(--beam-tint);color:var(--beam-ink);display:grid;place-items:center;flex:none}
+.role .r-ic svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.role h4{font-size:14.5px;font-weight:700;margin-bottom:1px}
 .role p{font-size:12.5px;color:var(--slate);margin:0}
 .rolesoon{margin-top:13px;text-align:center;font-size:12.5px;color:var(--slate)}
 .rolesoon b{color:var(--beam-ink)}
 .incl{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.inclc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow)}
-.inclc .ic{width:30px;height:30px;border-radius:9px;background:var(--beam-tint);color:var(--beam-ink);display:grid;place-items:center;margin-bottom:10px}
+.inclc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+.inclc .ic{width:30px;height:30px;border-radius:9px;background:var(--beam-tint);color:var(--beam-ink);display:grid;place-items:center;margin-bottom:9px}
 .inclc .ic svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.inclc h4{font-size:14px;font-weight:700;margin-bottom:3px}
+.inclc h4{font-size:14px;font-weight:700;margin-bottom:2px}
 .inclc p{margin:0;font-size:12.5px;color:var(--slate)}
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
-.tier{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);position:relative}
+.tier{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
 .tier.hl{border-color:var(--beam);box-shadow:0 0 0 1px var(--beam) inset,var(--shadow)}
 .tier .nm{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:700}
 .tier.hl .nm{color:var(--beam)}
-.tier .amt{font-weight:800;font-size:31px;letter-spacing:-1px;margin:5px 0 1px;font-family:'Poppins'}
+.tier .amt{font-weight:800;font-size:30px;letter-spacing:-1px;margin:5px 0 1px;font-family:'Poppins'}
 .tier .amt span{font-size:14px;color:var(--faint);font-weight:600;letter-spacing:0}
 .tier .inc{font-size:13.5px;font-weight:700;margin:7px 0 3px}
 .tier .note{font-size:12.5px;color:var(--slate)}
-.corenote{margin-top:14px;font-size:12.5px;color:var(--slate);background:var(--raised);border:1px solid var(--line);border-radius:12px;padding:13px 16px}
-.corenote b{color:var(--ink)}
-.upsell{margin-top:13px;border:1px solid var(--line);background:var(--beam-soft);border-radius:16px;padding:20px 22px}
+.corenote{margin-top:13px;font-size:12.5px;color:var(--slate);text-align:center}
+.upsell{margin-top:24px;border:1px solid var(--line);background:var(--beam-soft);border-radius:16px;padding:20px 22px}
 .upsell .top{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap}
 .upsell h4{font-size:16px;font-weight:800;font-family:'Poppins'}
-.upsell .px{font-family:'Poppins';font-weight:800;color:var(--beam);font-size:17px;white-space:nowrap}
-.upsell .sub{font-size:13px;color:var(--slate);margin:4px 0 13px;max-width:72ch}
+.upsell .px{font-family:'Poppins';font-weight:800;color:var(--beam);font-size:16px;white-space:nowrap}
+.upsell .sub2{font-size:13px;color:var(--slate);margin:4px 0 13px;max-width:70ch}
 .upsell ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:7px 20px}
 .upsell li{font-size:12.5px;color:var(--ink);padding-left:17px;position:relative}
 .upsell li:before{content:"";position:absolute;left:0;top:6px;width:8px;height:8px;border-radius:2px;background:var(--beam)}
-.cbars{display:flex;flex-direction:column;gap:11px;margin-top:16px}
-.cbrow{display:grid;grid-template-columns:158px 1fr;gap:20px;align-items:center;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:15px 18px;box-shadow:0 1px 0 rgba(15,23,42,.02)}
+.cbars{display:flex;flex-direction:column;gap:11px}
+.cbrow{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:15px 18px;box-shadow:0 1px 0 rgba(15,23,42,.02)}
 .cbrow.win{border-color:var(--beam);box-shadow:0 0 0 1px var(--beam) inset,var(--shadow)}
 .clab{font-family:'Poppins',sans-serif;font-weight:700;font-size:14.5px;color:var(--ink)}
 .clab span{display:block;font-family:'Nunito',sans-serif;font-weight:400;font-size:11px;color:var(--faint);margin-top:2px}
@@ -132,16 +126,15 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
 .about .me{width:46px;height:46px;border-radius:12px;background:var(--beam);color:#fff;font-weight:800;font-size:18px;display:grid;place-items:center;flex:none;font-family:'Poppins'}
 .about h4{font-size:15px;font-weight:700;margin-bottom:3px}
 .about p{margin:0;font-size:13px;color:var(--slate)}.about b{color:var(--ink)}
-.close{background:var(--beam);color:#fff;border-radius:20px;padding:30px 30px 28px;margin-top:46px;box-shadow:0 24px 54px -28px var(--beam)}
-.close .eyebrow{color:rgba(255,255,255,.8)}
-.close h2{margin:8px 0 12px;color:#fff}
-.close p{font-size:16px;color:rgba(255,255,255,.92);max-width:64ch;margin:0 0 20px}
+.close{background:var(--beam);color:#fff;border-radius:20px;padding:32px 30px 30px;margin-top:56px;box-shadow:0 24px 54px -28px var(--beam)}
+.close h2{margin:0 0 12px;color:#fff;font-size:clamp(22px,3vw,28px)}
+.close p{font-size:16px;color:rgba(255,255,255,.92);max-width:56ch;margin:0 0 20px}
 .finalcta{display:flex;gap:12px;flex-wrap:wrap}
 .fbtn{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;padding:14px 24px;border-radius:12px;white-space:nowrap;text-decoration:none}
 .fbtn.solid{background:#fff;color:var(--beam)}
 .fbtn.light{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.32)}
-.foot{margin-top:24px;font-size:11px;color:var(--faint);text-align:center;font-family:ui-monospace,Menlo,monospace}
-@media(max-width:780px){.flow{grid-template-columns:1fr}.ar{transform:rotate(90deg);height:26px}.proof,.tiers,.incl,.roles,.fgrid{grid-template-columns:1fr}.upsell ul{grid-template-columns:1fr}.cbrow{grid-template-columns:1fr;gap:13px}.cbmetrics{grid-template-columns:1fr;gap:11px}}
+.foot{margin-top:22px;font-size:11px;color:var(--faint);text-align:center;font-family:ui-monospace,Menlo,monospace}
+@media(max-width:780px){.flow{grid-template-columns:1fr}.ar{transform:rotate(90deg);height:24px}.proof,.tiers,.incl,.roles,.fgrid{grid-template-columns:1fr}.upsell ul{grid-template-columns:1fr}.cbrow{grid-template-columns:1fr;gap:13px}.cbmetrics{grid-template-columns:1fr;gap:11px}}
 </style>
 </head>
 <body>
@@ -150,39 +143,35 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
     <span class="brand"><span class="mk">N</span> NewCo</span>
     <span class="forp">For Paul · Aug 2026</span>
   </div>
-  <div class="conf"><b>Just for you, Paul.</b> This is an early draft of how I&rsquo;m thinking about positioning and pricing &mdash; sharing it because I trust your read. Happy for it to stay between us for now.</div>
+  <div class="conf"><b>Just for you, Paul.</b> An early draft of how I&rsquo;m positioning and pricing this &mdash; keen for your read, happy to keep it between us.</div>
 
   <div class="hero">
-    <div class="eyebrow">A second brain for your company</div>
     <h1 class="pop">Paul — let me build your company a <span class="b">second brain.</span></h1>
-    <p class="lede">Then a <b>growth team of AI agents runs on top of it</b> &mdash; your marketing, sales and outreach, done for you. All the value of a growth department, practically none of your effort.</p>
+    <p class="lede">Then a <b>team of AI agents runs it for you</b> &mdash; marketing, sales, outreach. A whole growth department, almost none of your effort.</p>
   </div>
 
   <div class="sec">
-    <div class="kick">Who it&rsquo;s for</div>
-    <div class="who">
-      <h2 class="pop">We help booked-out advisors and boutiques grow like a firm &mdash; with a second brain and a team of AI agents, not a payroll.</h2>
-      <p style="margin-bottom:16px">You&rsquo;re the product. Booked out, growing on reputation and referrals, good enough to invest &mdash; but <b>the method&rsquo;s in your head</b>, and there&rsquo;s never time to build the brand, pipeline or product that would let you <b>scale it, sell it, or get your time back</b>. Hiring a growth team costs a fortune and takes months. This is that team, for a fraction of one salary.</p>
-      <div class="chips"><span class="chip">Fractional execs</span><span class="chip">Independent advisors</span><span class="chip">Boutique consultants</span><span class="chip">Solo &amp; small firms</span></div>
-    </div>
+    <h2 class="hd">Grow like a firm — without hiring one</h2>
+    <p class="sub">For booked-out advisors and boutiques. A second brain that learns your business, and AI agents that do the work &mdash; a whole growth team, for a fraction of one salary.</p>
+    <div class="chips"><span class="chip">Fractional execs</span><span class="chip">Independent advisors</span><span class="chip">Boutique consultants</span><span class="chip">Solo &amp; small firms</span></div>
   </div>
 
   <div class="sec">
-    <div class="kick">How it works</div>
+    <h2 class="hd mb0">How it works</h2>
     <div class="flow">
-      <div class="step"><div class="n">1</div><h3>Public scan</h3><p>I read your website first, then everything else already public about you. No logins, no homework.</p></div>
-      <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
-      <div class="step"><div class="n">2</div><h3>Compile brain</h3><p>It all becomes one connected brain &mdash; your gaps and opportunities, mapped. Watch it build, live.</p></div>
-      <div class="ar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
-      <div class="step"><div class="n">3</div><h3>Brain is alive</h3><p>It comes alive with your next best actions, ranked &mdash; and refreshes them for you every week.</p></div>
+      <div class="step"><div class="n">1</div><h3>Public scan</h3><p>I read your website and everything public about you. No logins.</p></div>
+      <div class="ar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
+      <div class="step"><div class="n">2</div><h3>Compile brain</h3><p>It becomes one brain &mdash; your gaps and opportunities, mapped live.</p></div>
+      <div class="ar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
+      <div class="step"><div class="n">3</div><h3>Brain is alive</h3><p>It surfaces your next best moves, ranked &mdash; refreshed every week.</p></div>
     </div>
     <div class="freepanel">
-      <div class="fh"><span class="badge">Free forever</span><h3 class="pop">Your Lite brain</h3></div>
+      <div class="fh"><span class="badge">Free forever</span><h3 class="pop">Your Lite brain, free</h3></div>
       <div class="fgrid">
-        <div class="fitem"><div class="fi-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><circle cx="5" cy="6" r="1.5"/><circle cx="19" cy="6" r="1.5"/><circle cx="5" cy="18" r="1.5"/><circle cx="19" cy="18" r="1.5"/><line x1="6.3" y1="7" x2="10" y2="10.2"/><line x1="17.7" y1="7" x2="14" y2="10.2"/><line x1="6.3" y1="17" x2="10" y2="13.8"/><line x1="17.7" y1="17" x2="14" y2="13.8"/></svg></div><div><b>Your live second brain</b><span>Built from public sources, and yours to explore.</span></div></div>
-        <div class="fitem"><div class="fi-ic"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div><div><b>Next best actions, weekly</b><span>Refreshed every week, with a nudge to keep you moving.</span></div></div>
-        <div class="fitem"><div class="fi-ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><div><b>Chat to your brain</b><span>Ask it anything about your business.</span></div></div>
-        <div class="fitem"><div class="fi-ic"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div><b>A rising clarity score</b><span>Add a deck or two (a few MB) and watch the brain sharpen.</span></div></div>
+        <div class="fitem"><div class="fi-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><circle cx="5" cy="6" r="1.5"/><circle cx="19" cy="6" r="1.5"/><circle cx="5" cy="18" r="1.5"/><circle cx="19" cy="18" r="1.5"/><line x1="6.3" y1="7" x2="10" y2="10.2"/><line x1="17.7" y1="7" x2="14" y2="10.2"/><line x1="6.3" y1="17" x2="10" y2="13.8"/><line x1="17.7" y1="17" x2="14" y2="13.8"/></svg></div><div><b>A live second brain</b><span>From public sources, yours to explore.</span></div></div>
+        <div class="fitem"><div class="fi-ic"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div><div><b>Weekly next best actions</b><span>With a nudge to keep you moving.</span></div></div>
+        <div class="fitem"><div class="fi-ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><div><b>Chat to your brain</b><span>Ask it anything.</span></div></div>
+        <div class="fitem"><div class="fi-ic"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><div><b>A rising clarity score</b><span>Add a deck or two; watch it sharpen.</span></div></div>
       </div>
     </div>
     <div class="startcta">
@@ -191,87 +180,84 @@ h2{font-weight:800;font-size:clamp(21px,2.7vw,27px);letter-spacing:-.6px}
   </div>
 
   <div class="sec">
-    <div class="kick">Your growth team</div>
-    <p class="prooflead" style="margin-bottom:16px">When your brain flags something worth doing, put a teammate on it &mdash; a real role, doing the work. You just approve.</p>
+    <h2 class="hd">Your growth team</h2>
+    <p class="sub">Put an agent on any job &mdash; a real role, doing the work. You just approve.</p>
     <div class="roles">
-      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><path d="m3 11 15-4v11L3 15v-4z"/><path d="M11 15.5a2.6 2.6 0 0 1-5 .7"/><path d="M18 8a3 3 0 0 1 0 6"/></svg></div><div><h4>Demand marketer</h4><p>Fills the funnel &mdash; website, content, SEO and campaigns that bring people in.</p></div></div>
-      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/></svg></div><div><h4>Product marketer</h4><p>Owns the message &mdash; positioning, launches and go-to-market for what you sell.</p></div></div>
-      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div><div><h4>BDR</h4><p>Outbound &mdash; creates new demand and books you meetings.</p></div></div>
-      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg></div><div><h4>Sales</h4><p>Closes &mdash; proposals, demos and the collateral that moves deals over the line.</p></div></div>
-      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div><h4>Growth engineer</h4><p>Builds the products and growth systems &mdash; experiments, tooling and apps that compound.</p></div></div>
-      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><path d="M17 3a2.83 2.83 0 0 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div><div><h4>Brand &amp; design</h4><p>The visual craft across it all &mdash; identity, decks, pages and assets.</p></div></div>
+      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><path d="m3 11 15-4v11L3 15v-4z"/><path d="M11 15.5a2.6 2.6 0 0 1-5 .7"/><path d="M18 8a3 3 0 0 1 0 6"/></svg></div><div><h4>Demand marketer</h4><p>Content, SEO and campaigns that bring people in.</p></div></div>
+      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/></svg></div><div><h4>Product marketer</h4><p>Positioning, launches and go-to-market.</p></div></div>
+      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div><div><h4>BDR</h4><p>Outbound that books you meetings.</p></div></div>
+      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg></div><div><h4>Sales</h4><p>Proposals and collateral that close.</p></div></div>
+      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div><h4>Growth engineer</h4><p>Builds your products and growth systems.</p></div></div>
+      <div class="role"><div class="r-ic"><svg viewBox="0 0 24 24"><path d="M17 3a2.83 2.83 0 0 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div><div><h4>Brand &amp; design</h4><p>Your identity, decks and assets.</p></div></div>
     </div>
-    <div class="rolesoon"><b>+ specialist agents coming online soon</b> &mdash; more roles as you grow.</div>
+    <div class="rolesoon"><b>+ more specialist agents soon.</b></div>
   </div>
 
   <div class="sec">
-    <div class="kick">Every paid plan includes</div>
-    <p class="prooflead" style="margin-bottom:16px">Your full <b>Core brain</b> &mdash; one user, managed cloud in Australia, 6-month term &mdash; and everything that runs on it:</p>
+    <h2 class="hd">Every plan includes your Core brain</h2>
+    <p class="sub">One user, managed cloud in Australia, 6-month term &mdash; plus:</p>
     <div class="incl">
-      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 12 15 15"/></svg></div><h4>Your own files</h4><p>Upload decks, proposals and folders to feed the brain &mdash; up to 5&nbsp;GB.</p></div>
-      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Secure by default</h4><p>Encrypted in transit and at rest, 2FA login, and all your data held in Australia.</p></div>
-      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div><h4>It stays yours</h4><p>Download the whole brain as a structured markdown wiki anytime. No lock-in.</p></div>
-      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div><h4>A weekly report</h4><p>Your team&rsquo;s upcoming actions, plus anything waiting on your approval.</p></div>
-      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><h4>Unlimited chat</h4><p>Ask your brain anything about your business, any time &mdash; no daily cap.</p></div>
-      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div><h4>A weekly call with me</h4><p>30 minutes every week to talk through the report and where you&rsquo;re headed.</p></div>
+      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 12 15 15"/></svg></div><h4>Your own files</h4><p>Upload decks and docs &mdash; up to 5&nbsp;GB.</p></div>
+      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Secure by default</h4><p>Encrypted, 2FA, data held in Australia.</p></div>
+      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div><h4>It stays yours</h4><p>Export the whole brain anytime. No lock-in.</p></div>
+      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div><h4>A weekly report</h4><p>Your actions, and what needs approval.</p></div>
+      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div><h4>Unlimited chat</h4><p>Ask your brain anything, no cap.</p></div>
+      <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div><h4>A weekly call with me</h4><p>30 minutes, every week.</p></div>
     </div>
   </div>
 
   <div class="sec">
-    <div class="kick">Pricing</div>
-    <p class="prooflead" style="margin-bottom:16px">The brain is free; the <b>agents do the work</b>. Add agents to your Core brain &mdash; each a real role. Every paid plan includes the full Core brain.</p>
+    <h2 class="hd">Simple pricing</h2>
+    <p class="sub">The brain is free. Add agents when you&rsquo;re ready &mdash; each a real role.</p>
     <div class="tiers">
-      <div class="tier"><div class="nm">Build</div><div class="amt pop">$3k<span>/mo</span></div><div class="inc">Brain + 1 agent</div><div class="note">Your first hire — marketer or BDR.</div></div>
+      <div class="tier"><div class="nm">Build</div><div class="amt pop">$3k<span>/mo</span></div><div class="inc">Brain + 1 agent</div><div class="note">Your first hire.</div></div>
       <div class="tier hl"><div class="nm">Grow</div><div class="amt pop">$6k<span>/mo</span></div><div class="inc">Brain + 3 agents</div><div class="note">A working growth team.</div></div>
-      <div class="tier"><div class="nm">Accelerate</div><div class="amt pop">$12k<span>/mo</span></div><div class="inc">Full growth team</div><div class="note">The whole function, running for you.</div></div>
+      <div class="tier"><div class="nm">Accelerate</div><div class="amt pop">$12k<span>/mo</span></div><div class="inc">Full team</div><div class="note">The whole function.</div></div>
     </div>
-    <div class="corenote">Add or scale agents any time; grow to bigger teams of any agent as you go.</div>
+    <div class="corenote">Scale up or down any time.</div>
   </div>
 
   <div class="sec">
-    <div class="kick">Proof — this is live, not a deck</div>
-    <p class="prooflead"><b>Real work, already shipped</b> &mdash; every one built and run by this team. Click any of them.</p>
+    <h2 class="hd">Real work, already shipped</h2>
+    <p class="sub">Every piece below was built and is run by this team. Click any of them.</p>
     <div class="proof">
-      <div class="pc"><div class="shot"><img src="img/datalynx.png" alt="Datalynx website"></div><div class="body"><span class="cap">Website</span><h4>Datalynx</h4><p>An enterprise migration site with a live ROI calculator, built end-to-end.</p><div class="stat"><b>4 wks</b><span>concept to a live site + ROI calculator</span></div><a class="link" href="https://datalynx.com.au" target="_blank" rel="noopener">datalynx.com.au →</a></div></div>
-      <div class="pc"><div class="shot"><img src="img/tranche2.png" alt="StackGo Tranche 2 landing page"></div><div class="body"><span class="cap">Product marketing</span><h4>StackGo — Tranche 2 launch</h4><p>A product-launch landing page built around a hard compliance deadline.</p><div class="stat"><b>48 hrs</b><span>brief to a live launch page</span></div><a class="link" href="https://stackgo.io/identitycheck/tranche-2/" target="_blank" rel="noopener">stackgo.io →</a></div></div>
-      <div class="pc"><div class="shot"><img src="img/actiondemo.png" alt="Action Demolition website"></div><div class="body"><span class="cap">Brand + website</span><h4>Action Demolition</h4><p>A full brand and website for a Sydney trades business, top to bottom.</p><div class="stat"><b>2 wks</b><span>brand + full site, top to bottom</span></div><a class="link" href="https://action-build-clear.lovable.app/" target="_blank" rel="noopener">see the site →</a></div></div>
-      <div class="pc"><div class="shot"><img src="img/help.png" alt="StackGo help centre"></div><div class="body"><span class="cap">Content · self-serve</span><h4>StackGo help centre</h4><p>An AI-grounded help centre that answers customers so the team doesn't have to.</p><div class="stat"><b>40+</b><span>articles, answered by AI not the team</span></div><a class="link" href="https://help.stackgo.io" target="_blank" rel="noopener">help.stackgo.io →</a></div></div>
-      <div class="pc"><div class="shot"><img src="img/customerx.png" alt="Anonymised decision-support dashboard"></div><div class="body"><span class="cap">Sales tool</span><h4>Customer X — decision agent</h4><p>A live decision-support dashboard we built for a client, spec to shipped.</p><div class="stat"><b>~2 wks</b><span>spec to a live decision tool</span></div><span class="priv">Private client tool</span></div></div>
-      <div class="pc"><div class="shot dual"><img src="img/casestudy.png" alt="Datalynx case study cover"><img src="img/whitepaper.png" alt="Datalynx white paper cover"></div><div class="body"><span class="cap">Sales &amp; marketing collateral</span><h4>Datalynx — case studies &amp; white papers</h4><p>Client-ready case studies and white papers. <span style="color:var(--faint)">+ LinkedIn posts, banners, partner decks.</span></p><div class="stat"><b>20+</b><span>client-ready assets shipped</span></div><div class="dual-cta"><a href="https://143849563.fs1.hubspotusercontent-eu1.net/hubfs/143849563/datalynx-case-study-dcj-phoenix.pdf" target="_blank" rel="noopener">Preview case study &rarr;</a><a href="https://datalynx.com.au/legacy-data-tax" target="_blank" rel="noopener">Preview white paper &rarr;</a></div></div></div>
+      <div class="pc"><div class="shot"><img src="img/datalynx.png" alt="Datalynx website"></div><div class="body"><span class="cap">Website</span><h4>Datalynx</h4><p>Enterprise migration site with a live ROI calculator.</p><div class="stat"><b>4 wks</b><span>concept to live</span></div><a class="link" href="https://datalynx.com.au" target="_blank" rel="noopener">datalynx.com.au →</a></div></div>
+      <div class="pc"><div class="shot"><img src="img/tranche2.png" alt="StackGo Tranche 2 landing page"></div><div class="body"><span class="cap">Product marketing</span><h4>StackGo — Tranche 2</h4><p>Launch page built to a hard compliance deadline.</p><div class="stat"><b>48 hrs</b><span>brief to live</span></div><a class="link" href="https://stackgo.io/identitycheck/tranche-2/" target="_blank" rel="noopener">stackgo.io →</a></div></div>
+      <div class="pc"><div class="shot"><img src="img/actiondemo.png" alt="Action Demolition website"></div><div class="body"><span class="cap">Brand + website</span><h4>Action Demolition</h4><p>Full brand and site for a Sydney trades business.</p><div class="stat"><b>2 wks</b><span>top to bottom</span></div><a class="link" href="https://action-build-clear.lovable.app/" target="_blank" rel="noopener">see the site →</a></div></div>
+      <div class="pc"><div class="shot"><img src="img/help.png" alt="StackGo help centre"></div><div class="body"><span class="cap">Content</span><h4>StackGo help centre</h4><p>AI-grounded help centre that answers customers.</p><div class="stat"><b>40+</b><span>AI-answered articles</span></div><a class="link" href="https://help.stackgo.io" target="_blank" rel="noopener">help.stackgo.io →</a></div></div>
+      <div class="pc"><div class="shot"><img src="img/customerx.png" alt="Anonymised decision-support dashboard"></div><div class="body"><span class="cap">Sales tool</span><h4>Customer X — decision agent</h4><p>A live decision-support dashboard, spec to shipped.</p><div class="stat"><b>~2 wks</b><span>spec to live</span></div><span class="priv">Private client tool</span></div></div>
+      <div class="pc"><div class="shot dual"><img src="img/casestudy.png" alt="Datalynx case study cover"><img src="img/whitepaper.png" alt="Datalynx white paper cover"></div><div class="body"><span class="cap">Collateral</span><h4>Case studies &amp; white papers</h4><p>Client-ready assets <span style="color:var(--faint)">+ posts, banners, decks.</span></p><div class="stat"><b>20+</b><span>assets shipped</span></div><div class="dual-cta"><a href="https://143849563.fs1.hubspotusercontent-eu1.net/hubfs/143849563/datalynx-case-study-dcj-phoenix.pdf" target="_blank" rel="noopener">Case study &rarr;</a><a href="https://datalynx.com.au/legacy-data-tax" target="_blank" rel="noopener">White paper &rarr;</a></div></div></div>
     </div>
-    <div class="proofnote"><b>Real work, for real clients</b> &mdash; an enterprise data-migration firm, a Sydney demolition business, and StackGo's own customers. Every asset above was built and is run by this team.</div>
-    <div class="upsell" style="margin-top:24px">
-      <div class="top"><h4>Upgrade: the Enterprise brain</h4><span class="px">from $20k build + $5k/mo</span></div>
-      <p class="sub">Your brain in its own private environment, for the whole team &mdash; an engineer-built, engineer-supported build for firms that need more than the Core brain.</p>
+    <div class="proofnote"><b>Real clients</b> &mdash; an enterprise data firm, a Sydney trades business, and StackGo&rsquo;s own customers.</div>
+    <div class="upsell">
+      <div class="top"><h4>Upgrade: the Enterprise brain</h4><span class="px">from $20k + $5k/mo</span></div>
+      <p class="sub2">Your brain in its own private environment, for the whole team &mdash; engineer-built and supported.</p>
       <ul>
-        <li>Your own <b>private cloud</b> &mdash; isolated, yours alone</li>
-        <li><b>Unlimited users</b>, roles &amp; permissions</li>
-        <li>Unlimited storage &mdash; every deck, doc &amp; dataset</li>
-        <li>Enterprise security: <b>SSO</b>, audit logs, encryption</li>
-        <li><b>Custom connectors</b> to your CRM, docs &amp; data</li>
-        <li>Priority support + SLA</li>
+        <li>Your own <b>private cloud</b></li>
+        <li><b>Unlimited</b> users and storage</li>
+        <li>SSO, audit logs, encryption</li>
+        <li>Custom connectors + priority SLA</li>
       </ul>
     </div>
   </div>
 
   <div class="sec">
-    <div class="kick">The alternatives</div>
-    <p class="prooflead" style="margin-bottom:16px">A brain on its own just helps you <i>think</i> &mdash; work off it yourself and that&rsquo;s the DIY tools. Here&rsquo;s how the ways to grow actually stack up:</p>
+    <h2 class="hd">How it compares</h2>
     <div class="cbars"><div class="cbrow "><div class="clab">DIY AI tools<span>Claude, Delphi, Spine</span></div><div class="cbmetrics"><div class="cbm"><div class="cbm-top"><span class="cbm-l">Value</span><span class="cbm-v">$20–300/mo</span></div><div class="track"><div class="fill" style="width:22%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Done for you</span><span class="cbm-v">you do it all</span></div><div class="track"><div class="fill" style="width:10%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Covers</span><span class="cbm-v">one task</span></div><div class="track"><div class="fill" style="width:12%"></div></div></div></div></div><div class="cbrow "><div class="clab">A marketing agency<span>the usual suspects</span></div><div class="cbmetrics"><div class="cbm"><div class="cbm-top"><span class="cbm-l">Value</span><span class="cbm-v">$2–8k/mo</span></div><div class="track"><div class="fill" style="width:42%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Done for you</span><span class="cbm-v">you brief &amp; chase</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Covers</span><span class="cbm-v">marketing only</span></div><div class="track"><div class="fill" style="width:34%"></div></div></div></div></div><div class="cbrow "><div class="clab">A hire<span>coordinator &rarr; fractional CMO</span></div><div class="cbmetrics"><div class="cbm"><div class="cbm-top"><span class="cbm-l">Value</span><span class="cbm-v">$6–25k/mo</span></div><div class="track"><div class="fill" style="width:30%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Done for you</span><span class="cbm-v">you manage them</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Covers</span><span class="cbm-v">one function</span></div><div class="track"><div class="fill" style="width:42%"></div></div></div></div></div><div class="cbrow win"><div class="clab">NewCo<span>brain + agents + me</span></div><div class="cbmetrics"><div class="cbm"><div class="cbm-top"><span class="cbm-l">Value</span><span class="cbm-v">$3–12k/mo</span></div><div class="track"><div class="fill" style="width:90%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Done for you</span><span class="cbm-v">you just approve</span></div><div class="track"><div class="fill" style="width:92%"></div></div></div><div class="cbm"><div class="cbm-top"><span class="cbm-l">Covers</span><span class="cbm-v">whole function</span></div><div class="track"><div class="fill" style="width:95%"></div></div></div></div></div></div>
-    <div class="cbnote">Longer bar is better on every measure. The figure under Value is the monthly price.</div>
+    <div class="cbnote">Longer bar = better. The figure under Value is the monthly price.</div>
   </div>
 
   <div class="sec">
-    <div class="kick">About me</div>
+    <h2 class="hd">About me</h2>
     <div class="about">
       <div class="me">MC</div>
-      <div><h4>Matt Collis</h4><p>What drives me is simple: technology that creates real value and makes people&rsquo;s work lives easier. The future I&rsquo;m building toward &mdash; <b>one person, backed by a team of agents, doing what used to take a whole firm.</b></p></div>
+      <div><h4>Matt Collis</h4><p>Technology that creates real value and makes people&rsquo;s work lives easier. What I&rsquo;m building &mdash; <b>one person, backed by a team of agents, doing what used to take a whole firm.</b></p></div>
     </div>
   </div>
 
   <div class="close">
     <h2 class="pop">Have a look, then tell me what you think.</h2>
-    <p>The first version of your brain is free and takes minutes. Want me to build yours? Start it now &mdash; or just email me what you make of all this. No meeting needed unless you want one.</p>
+    <p>Your first brain is free and takes minutes. Want me to build yours? Or just tell me what you make of it.</p>
     <div class="finalcta">
       <a class="fbtn light" href="https://matt-stackgo.github.io/newco-second-brain-demo/" target="_blank" rel="noopener">Build my brain &mdash; free &rarr;</a>
       <a class="fbtn solid" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=matt@stackgo.io&amp;su=NewCo%20thoughts" target="_blank" rel="noopener">Email me your thoughts &rarr;</a>
