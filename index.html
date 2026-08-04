@@ -179,6 +179,11 @@ h1 .b{color:var(--beam)}
 .dot:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--faint);flex:none}
 .dot.us{color:var(--beam-ink);font-size:14px;font-family:'Poppins';font-weight:800}
 .dot.us:before{width:15px;height:15px;background:var(--beam);box-shadow:0 0 0 6px var(--beam-tint)}
+.dot .tip{position:absolute;left:50%;bottom:calc(100% + 9px);transform:translateX(-50%);background:var(--ink);color:#fff;font-size:11px;font-weight:600;line-height:1.45;padding:8px 11px;border-radius:9px;width:168px;text-align:center;opacity:0;visibility:hidden;transition:opacity .15s ease;pointer-events:none;z-index:6;box-shadow:0 12px 26px -10px rgba(15,23,42,.65)}
+.dot .tip b{color:#fff}
+.dot .tip:after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:var(--ink)}
+.dot:hover{z-index:7}.dot:hover .tip{opacity:1;visibility:visible}
+.dot.us .tip{background:var(--beam-ink)}.dot.us .tip:after{border-top-color:var(--beam-ink)}
 .mx-xl{display:flex;justify-content:space-between;font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-top:8px}
 .mx-note{margin-top:14px;font-size:12.5px;color:var(--slate);text-align:center}.mx-note b{color:var(--ink)}
 .cmp{margin-top:16px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
@@ -371,12 +376,12 @@ h1 .b{color:var(--beam)}
         <div class="mx-win"></div>
         <div class="mx-cross-v"></div><div class="mx-cross-h"></div>
         <span class="mx-tag">where we play</span>
-        <span class="dot" style="left:19%;top:80%">Copilot</span>
-        <span class="dot" style="left:35%;top:69%">Glean</span>
-        <span class="dot" style="left:23%;top:90%">Notion AI</span>
-        <span class="dot" style="left:41%;top:85%">Guru</span>
-        <span class="dot" style="left:47%;top:53%">Dust</span>
-        <span class="dot us" style="left:74%;top:23%">NewCo</span>
+        <span class="dot" style="left:19%;top:80%">Copilot<span class="tip">AI across Word, Excel, Teams<br><b>$30/seat</b></span></span>
+        <span class="dot" style="left:35%;top:69%">Glean<span class="tip">Enterprise search + knowledge graph<br><b>~$50+/seat</b></span></span>
+        <span class="dot" style="left:23%;top:90%">Notion AI<span class="tip">Assistant inside Notion<br><b>~$20/seat</b></span></span>
+        <span class="dot" style="left:41%;top:85%">Guru<span class="tip">Wiki + AI knowledge agents<br><b>$25/seat</b></span></span>
+        <span class="dot" style="left:47%;top:53%">Dust<span class="tip">Agent platform on your data<br><b>$30–150/seat</b></span></span>
+        <span class="dot us" style="left:74%;top:23%">NewCo<span class="tip">A vertical brain + agents that do the work<br><b>Outcome, not per-seat</b></span></span>
       </div>
       <div class="mx-xl"><span>Generic &mdash; for everyone</span><span>Vertical &mdash; built for you &rarr;</span></div>
       <div class="mx-bot">Waits for you to ask &darr;</div>
