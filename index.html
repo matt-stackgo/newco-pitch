@@ -16,6 +16,7 @@
   --shadow:0 1px 0 rgba(15,23,42,.03), 0 24px 54px -34px rgba(15,23,42,.4);
 }
 *{box-sizing:border-box}
+html,body{max-width:100%;overflow-x:hidden}
 body{margin:0;background:var(--snow);color:var(--ink);line-height:1.55;
   font-family:'Nunito',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
 .pop{font-family:'Poppins',system-ui,sans-serif}
@@ -35,7 +36,7 @@ a{color:var(--beam-ink);text-decoration:none}
 .hero-l{min-width:0}
 .herobtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 .hero-r{position:relative}
-.brainhero{width:100%;height:auto;display:block;overflow:visible}
+.brainhero{width:100%;height:auto;display:block}
 @keyframes bhpulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:.7;transform:scale(1.06)}}
 .bh-hub{transform-box:fill-box;transform-origin:center;animation:bhpulse 3.6s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.bh-hub{animation:none}}
