@@ -287,7 +287,6 @@ h1 .b{color:var(--beam)}
       <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h4>We do the work</h4><p>You approve; the team ships. Value from the first week, not the first quarter.</p></div>
       <div class="inclc"><div class="ic"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><h4>It compounds</h4><p>Every week it sharpens and does more. Momentum you can feel.</p></div>
     </div>
-    <div class="corenote">You could wire this up yourself with raw AI tools &mdash; and spend months learning and building before you see a dollar back. This hands you the value <b style="color:var(--ink)">now</b>, and you own what we build.</div>
   </div>
 
   <div class="sec" id="team">
@@ -377,34 +376,43 @@ h1 .b{color:var(--beam)}
     <h2 class="hd">How it compares</h2>
     <p class="sub">Everyone else makes you wait. We deliver value in days &mdash; then compound it, week after week.</p>
     <style>
-      .scorewrap{overflow-x:auto}
-      .scorecard{width:100%;border-collapse:collapse;margin-top:6px}
-      .scorecard th,.scorecard td{padding:12px 8px;text-align:center;border-bottom:1px solid #EEF1F6;vertical-align:middle}
+      .scorewrap{overflow-x:hidden}
+      .scorecard{width:100%;border-collapse:collapse;margin-top:6px;table-layout:fixed}
+      .scorecard th,.scorecard td{padding:12px 6px;text-align:center;border-bottom:1px solid #EEF1F6;vertical-align:middle}
+      .scorecard th:nth-child(1),.scorecard td:nth-child(1){text-align:left}
       .scorecard thead th{font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:700;color:#64748B;vertical-align:bottom;line-height:1.25}
       .scorecard th.hero,.scorecard td.hero{background:#F5F8FF}
       .scorecard thead th.hero{color:#0055FF}
-      .scorecard thead th.hero .badge{display:block;font-family:'Poppins',sans-serif;font-size:8px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#0055FF;background:#E4EDFF;border-radius:4px;padding:2px 6px;margin:0 auto 5px;width:max-content}
-      .scorecard th:first-child,.scorecard td:first-child{text-align:left;min-width:158px}
+      .scorecard thead th.hero .badge{display:block;font-family:'Poppins',sans-serif;font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0055FF;background:#E4EDFF;border-radius:4px;padding:2px 6px;margin:0 auto 5px;width:max-content}
       .sc-name{font-family:'Poppins',sans-serif;font-weight:700;font-size:14.5px;color:#0F172A}
       .sc-sub{font-size:11px;color:#94A3B8;margin-top:2px}
       .scorecard tbody tr.win{background:#EEF4FF}
       .scorecard tbody tr.win td{border-bottom:none}
       .scorecard tbody tr.win td.hero{background:#E1EBFF}
       .scorecard tbody tr.win .sc-name{color:#0055FF}
-      .sc-stars{display:inline-flex;gap:3px}
+      .sc-stars{display:inline-flex;gap:3px;justify-content:center}
       .sc-stars svg{width:15px;height:15px;display:block}
       .sc-stars .on{fill:#0055FF}
       .sc-stars .off{fill:#DDE3EC}
+      @media (max-width:640px){
+        .scorecard th,.scorecard td{padding:8px 1px}
+        .sc-name{font-size:11.5px;line-height:1.15}
+        .sc-sub{display:none}
+        .scorecard thead th{font-size:8.5px;line-height:1.2}
+        .scorecard thead th.hero .badge{display:none}
+        .sc-stars{gap:.5px}
+        .sc-stars svg{width:8px;height:8px}
+      }
     </style>
     <div class="scorewrap">
     <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol></svg>
     <table class="scorecard">
+      <colgroup><col style="width:28%"><col style="width:18%"><col style="width:18%"><col style="width:18%"><col style="width:18%"></colgroup>
       <thead><tr>
         <th></th>
         <th>Price</th>
-        <th>Value</th>
         <th>Done<br>for you</th>
-        <th class="hero"><span class="badge">the point</span>Speed<br>to value</th>
+        <th class="hero">Speed<br>to value</th>
         <th>Covers</th>
       </tr></thead>
       <tbody>
@@ -412,14 +420,12 @@ h1 .b{color:var(--beam)}
           <td><div class="sc-name">DIY AI tools</div><div class="sc-sub">Claude, Delphi, Spine &middot; $20&ndash;300/mo</div></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg></span></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
-          <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
           <td class="hero"><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
         </tr>
         <tr>
           <td><div class="sc-name">A marketing agency</div><div class="sc-sub">the usual suspects &middot; $2&ndash;8k/mo</div></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
-          <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
           <td class="hero"><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
@@ -427,7 +433,6 @@ h1 .b{color:var(--beam)}
         <tr>
           <td><div class="sc-name">A hire</div><div class="sc-sub">coordinator &rarr; fractional CMO &middot; $6&ndash;25k/mo</div></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
-          <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
           <td class="hero"><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
@@ -435,7 +440,6 @@ h1 .b{color:var(--beam)}
         <tr class="win">
           <td><div class="sc-name">NewCo</div><div class="sc-sub">brain + agents + me &middot; $3&ndash;12k/mo</div></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg><svg class="off"><use href="#star"/></svg></span></td>
-          <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg></span></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg></span></td>
           <td class="hero"><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg></span></td>
           <td><span class="sc-stars"><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg><svg class="on"><use href="#star"/></svg></span></td>
